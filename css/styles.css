@@ -1,0 +1,85 @@
+﻿* {
+    box-sizing: border-box;
+    border:1px;
+    border-color:#333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container__header, #main, footer {
+    padding: 0px 50px 0px 50px;
+}
+
+.container__header {
+    height: 100px;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 130px;
+    height: auto;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    height: 100px;
+    /*border: 1px solid grey;*/
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    line-height: 5em;
+    display: flex;
+    height: 80px;
+    /*bborder: 1px solid green;*/
+}
+
+.nav__list__item {
+    list-style: none;
+}
+
+.nav__list__item a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    padding: 15px 50px 0px 50px;
+}
+
+.nav__list__item--on {
+    color: dodgerblue;
+    border-top: 4px solid dodgerblue;
+}
+
+.nav__list__item--off {
+    color: black;
+    border-top: 4px solid white;
+}
+
+.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon {
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+}
+
+    .container-4:hover button.icon:hover {
+        background: white;
+    }
