@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 
 <html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,69 +7,264 @@
     <meta name="author" content="Sylvestre @Openclassrooms BOOKI Projet 2">
     <meta name="description" content="Site d'hébergements et activités pour plannifiez vos vacances">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;0,900;1,700;1,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&amp;display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
     <title>Booki - Hébergements et activités - Plannifiez vos vacances</title>
 </head>
 <body>
     <div id="container">
+        <!-- START header (brand and nav) -->
         <header class="container__header">
-            <img id="logo" src="images/logo/Booki.png" alt="Logo de l'agence" class="header--logo">
+            <div class="brand"><a href="#"><img src="images/logo1/Booki.png" width="100" alt="Logo de l'agence" id="brand-logo"></a></div>
             <nav class="nav" id="nav">
-                <ul class="nav__list">
-                    <li class="nav__list__item nav__list__item--on" id="nav__list__item__A"><a href="#hebergement">Hébergements</a></li>
-                    <li class="nav__list__item nav__list__item--off" id="nav__list__item__B"><a href="#activite">Activités</a></li>
+                <ul class="nav__list" id="nav__list">
+                    <li class="nav__list__item nav__list__item--on" id="nav__list__item__A">
+                        <a href="#bloc-AA" class="nav__list__item__text">Hébergements</a>
+                    </li>
+                    <li class="nav__list__item nav__list__item--off" id="nav__list__item__B">
+                        <a href="#bloc-AB" class="nav__list__item__text">Activités</a>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <div id="main">
+        <!-- END header (brand and nav) -->
+        <!-- START search -->
+        <div class="bloc-search" id="bloc-search">
+            <header class="bloc-search__header">
+                <h1 class="bloc-search__header-h1">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </header>
+            <form class="bloc-search__form" id="bloc-search__form" action="#" autocomplete="on">
+                <div class="bloc-search__form__group">
+                    <span class="bloc-search__form__group__item__icon"><i class="fa-solid fa-location-dot"></i></span>
+                    <input class="bloc-search__form__group__item__inputA" id="search__inputA" type="text" name="search__inputA" value="Marseille, France" />
+                    <input class="bloc-search__form__group__item__submit--desk" type="submit" value="Rechercher" />
+                    <!--<input class="bloc-search__form__group__item__submit--phon" type="submit" value="" />-->
+                </div>
+            </form>
+            <!-- START option filter search -->
+            <ul class="bloc-search__filter">
+                <li class="bloc-search__filter__head">
+                    <span class="bloc-search__filter__head__desc">Filtres</span>
+                </li>
+                <li class="bloc-search__filter__item">
+                    <button class="bloc-search__filter__item__btn" type="button">
+                        <span class="fa-solid fa-money-bill-wave bloc-search__filter__item__btn__icon"></span>
+                        <span class="bloc-search__filter__item__btn__text">Économique</span>
+                    </button>
+                </li>
+                <li class="bloc-search__filter__item">
+                    <button class="bloc-search__filter__item__btn" type="button">
+                        <span class="fa-solid fa-child bloc-search__filter__item__btn__icon"></span>
+                        <span class="bloc-search__filter__item__btn__text">Familial</span>
+                    </button>
+                </li>
+                <li class="bloc-search__filter__item">
+                    <button class="bloc-search__filter__item__btn" type="button">
+                        <span class="fa-solid fa-heart bloc-search__filter__item__btn__icon"></span>
+                        <span class="bloc-search__filter__item__btn__text">Romantique</span>
+                    </button>
+                </li>
+                <li class="bloc-search__filter__item">
+                    <button class="bloc-search__filter__item__btn" type="button">
+                        <span class="fa-solid fa-dog bloc-search__filter__item__btn__icon"></span>
+                        <span class="bloc-search__filter__item__btn__text">Animaux autorisés</span>
+                    </button>
+                </li>
+            </ul>
+            <p class="bloc-search-info"><span class="bloc-search-info__icon"><i class="fa-solid fa-info"></i></span><span class="bloc-search-info__text">Plus de 500 logements sont disponibles dans cette ville</span></p>
+            <!-- END option filter search -->
+        </div>
+        <!-- END search -->
+        <!-- START main -->
+        <div class="main" id="main">
 
+            <!-- START "room01" -->
+            <div class="room01">
 
-            <div id="search">
-                <header class="search__header">
-                    <h1 class="title--h1 search_header--h1">Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                </header>
-                <form class="search" id="search" action="#" autocomplete="on">
-                    <i class="search__icon fa fa-search"></i>
-                    <input class="search__inputA" id="search__inputA" type="text" name="search__inputA" value="Marseille, France" />
-                    <input class="search__submit--desk" type="submit" value="Rechercher" />
-                    <!--<input class="search__submit--mobi" type="submit" value="" />-->
-                </form>
+                <!-- START aside-AA -->
+                <aside class="aside-FAM01-T01" id="aside-AA">
+                    <h2>Les plus populaires</h2>
 
-    </div>
-    <!-- End "search" -->
+                </aside>
+                <!--- END aside-AA -->
+                <!-- START bloc-AA -->
+                <section class="section-FAM01-T01" id="bloc-AA">
+                    <header>
+                        <h2 class="section-FAM01-T01__header__title">Hébergement à Marseille</h2>
+                    </header>
 
+                    <div class="section-FAM01-T01__group">
 
-                    <section class="section--heb" id="hebergement">
-                        <!-- A realiser plus tard -->
-                    </section>
-                    <!--- End "section--heb" -->
+                        <div class="section-FAM01-T01__group__card">
+                            <a href="#" class="section-FAM01-T01__group__card__link">
+                                <img src="images/hebergements1/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="ma description" class="section-FAM01-T01__group__card__img" />
+                                <div class="section-FAM01-T01__group__card__text">
+                                    <h4>Auberge la Cannebière</h4>
+                                    <p>
+                                        Nuit à partir de <span>25 &euro;</span><br>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-thin fa-star-sharp"></i>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
 
+                        <div class="section-FAM01-T01__group__card">
+                            <a href="#" class="section-FAM01-T01__group__card__link">
+                                <img src="images/hebergements1/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="ma description" class="section-FAM01-T01__group__card__img" />
+                                <div class="section-FAM01-T01__group__card__text">
+                                    <h4>Auberge la Cannebière</h4>
+                                    <p>
+                                        Nuit à partir de <span>25 &euro;</span><br>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-thin fa-star-sharp"></i>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
 
-                    <aside class="aside--pop" id="populaire">
-                        <!-- A realiser plus tard -->
-                    </aside>
-                    <!--- End "aside--pop" -->
+                        <div class="section-FAM01-T01__group__card">
+                            <a href="#" class="section-FAM01-T01__group__card__link">
+                                <img src="images/hebergements1/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="ma description" class="section-FAM01-T01__group__card__img" />
+                                <div class="section-FAM01-T01__group__card__text">
+                                    <h4>Auberge la Cannebière</h4>
+                                    <p>
+                                        Nuit à partir de <span>25 &euro;</span><br>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-thin fa-star-sharp"></i>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
 
+                        <div class="section-FAM01-T01__group__card">
+                            <a href="#" class="section-FAM01-T01__group__card__link">
+                                <img src="images/hebergements1/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="ma description" class="section-FAM01-T01__group__card__img" />
+                                <div class="section-FAM01-T01__group__card__text">
+                                    <h4>Auberge la Cannebière</h4>
+                                    <p>
+                                        Nuit à partir de <span>25 &euro;</span><br>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-thin fa-star-sharp"></i>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
 
-                    <section class="section--act" id="activite">
-                        <!-- A realiser plus tard -->
-                    </section>
-                    <!-- End "section--act" -->
+                        <div class="section-FAM01-T01__group__card">
+                            <a href="#" class="section-FAM01-T01__group__card__link">
+                                <img src="images/hebergements1/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="ma description" class="section-FAM01-T01__group__card__img" />
+                                <div class="section-FAM01-T01__group__card__text">
+                                    <h4>Auberge la Cannebière</h4>
+                                    <p>
+                                        Nuit à partir de <span>25 &euro;</span><br>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-thin fa-star-sharp"></i>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
 
+                        <div class="section-FAM01-T01__group__card">
+                            <a href="#" class="section-FAM01-T01__group__card__link">
+                                <img src="images/hebergements1/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="ma description" class="section-FAM01-T01__group__card__img" />
+                                <div class="section-FAM01-T01__group__card__text">
+                                    <h4>Auberge la Cannebière</h4>
+                                    <p>
+                                        Nuit à partir de <span>25 &euro;</span><br>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-thin fa-star-sharp"></i>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bloc100pct">
+                            <h3><a href="#">Afficher plus</a></h3>
+                        </div>
 
-</div>
-        <!-- End "main" -->
+                    </div>
+                    <!--- END DIV section-FAM01-T01__group -->
 
+                </section>
+                <!--- END bloc-AA -->
+
+            </div>
+            <!-- END room01 -->
+            <!-- START room02 -->
+            <div class="room02">
+                <!-- START bloc-AB -->
+                <section class="section-FAM01-T02" id="bloc-AB">
+                    <h2>Activités</h2>
+                </section>
+                <!-- END bloc-AB -->
+            </div>
+            <!-- END room02 -->
+
+        </div>
+        <!-- END main -->
 
         <footer>
-            <!-- A realiser plus tard -->
+
+            <!-- column 1 -->
+            <ul class="footer__cut">
+                <li>
+                    <h3 class="footer__cut__group--title">A propos</h3>
+                    <ul class="footer__cut__group">
+                        <li class="footer__cut__group__item"><a href="#">Fonctionnement du site</a></li>
+                        <li class="footer__cut__group__item"><a href="#">Conditions générales de vente</a></li>
+                        <li class="footer__cut__group__item"><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- column 2 -->
+            <ul class="footer__cut">
+                <li>
+                    <h3 class="footer__cut__group--title">Nos hébergements</h3>
+                    <ul class="footer__cut__group">
+                        <li class="footer__cut__group__item"><a href="#">Charte qualité</a></li>
+                        <li class="footer__cut__group__item"><a href="#">Soumettre votre hôtel</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- column 3 -->
+            <ul class="footer__cut">
+                <li>
+                    <h3 class="footer__cut__group--title">Assistance</h3>
+                    <ul class="footer__cut__group">
+                        <li class="footer__cut__group__item"><a href="#">Centre d'aide</a></li>
+                        <li class="footer__cut__group__item"><a href="#">Nous contacter</a></li>
+                    </ul>
+                </li>
+            </ul>
+
         </footer>
 
     </div>
-    <!-- End "container" -->
+    <!-- END page container -->
 </body>
 </html>
