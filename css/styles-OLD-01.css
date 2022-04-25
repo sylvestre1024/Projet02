@@ -9,9 +9,8 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
-    border:1px solid black;
 }
 
 ul {
@@ -45,7 +44,7 @@ figure {
 /* ========================= START header ========================= */
 #container {
     /*width: 50%;*/
-    max-width: 1900px;
+    /*max-width: 1100px;*/
 }
 
 .container__header {
@@ -57,7 +56,7 @@ figure {
 
 .brand {
     padding-top: 40px;
-    padding-left: 65px;
+    padding-left: 15px;
     width: 100px;
     height: auto;
 }
@@ -86,7 +85,6 @@ figure {
     padding: 45px 0px 25px 0px;
     width: 150px;
     border-top: 4px solid white;
-    font-size: 18px;
 }
 
     .nav__list__item__text:hover {
@@ -114,7 +112,7 @@ figure {
 }
 
 .bloc-search__header-h1 {
-    font-size: 22px;
+    font-size: 21px;
     margin-bottom: 8px;
     margin-top: 15px;
     font-weight: 700;
@@ -137,8 +135,8 @@ figure {
     width: 50px;
     display: inline-block;
     background-color: #f2f2f2;
+    text-align: center;
     padding-top: 15px;
-    padding-left: 17px;
     border-right: 0;
     border-radius: 15px 0px 0px 15px;
     font-size: 18px;
@@ -166,18 +164,16 @@ figure {
 }
 
 .bloc-search__form__group__item__submit--phon {
-    display: none;
     font-size: 18px;
     font-weight: 700;
     color: white;
-    width: 50px;
+    width: 130px;
     background-color: #0065fc;
     border-left: 0;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 0px 15px 15px 0px;
     cursor: pointer;
     border: none;
 }
-
 /* filter */
 .bloc-search__filter {
     display: flex;
@@ -260,7 +256,7 @@ figure {
     border: 2px solid #f2f2f2;
     border-radius: 12px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     color: #0065fc;
     font-weight: 800;
     text-align: center;
@@ -274,7 +270,7 @@ figure {
 /* ======================== START main ========================*/
 .main {
     margin-top: 30px;
-    padding: 0px 45px 0px 45px;
+    padding: 0px 45px 0px 45px; /* padding: 0px 1% 0px 1%; */
 }
 
 .bloc100pct {
@@ -289,11 +285,11 @@ figure {
 }
 
 .room01 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-
+    display: flex; /* delete when phone */
+    justify-content: space-between; /* delete when phone */ /* "center" when tablet */
+    flex-direction: row-reverse; /* delete when phone */
+    flex-wrap: wrap; /* delete when phone */
+    /*padding: 5px;*/ /* vois pas trop utilité !!! */
 }
 
 .bloc100pct {
@@ -302,63 +298,54 @@ figure {
 }
 
 .display-more {
-    padding: 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    padding-top: 5px;
 }
 
 .room02 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start; /* "center" when tablet and phone */
     padding: 0px;
 }
 
 .section-FAM01-T01 { /* HEBERGEMENT */
     margin-bottom: 40px;
-    padding: 1% 0% 1% 2%;
+    padding: 1% 0% 1% 2%; /*20px 0px 20px 40px;*/
 }
 
 .aside-FAM01-T01 { /* LES PLUS POPULAIRES */
     margin-bottom: 40px;
-    padding: 1% 2.5% 0% 2.5%;
+    padding: 1% 2% 0% 2%; /* 20px 35px 0px 40px; */
 }
 
 .section-FAM01-T01, .aside-FAM01-T01 { /* HEBERGEMENT    LES PLUS POPULAIRES */
     background-color: hsl(0, 0%, 90%);
     border-radius: 25px;
-    padding-top: 25px;
 }
 
 
 .aside-FAM01-T01 {
-    width: 31.5%;
+    width: 31.5%; /* delete when phone */
 }
 
 .section-FAM01-T01 {
-    width: 65.5%;
+    width: 65.5%; /* delete when phone */
 }
 
 .section-FAM01-T01__header__title, .section-FAM01-T02__header__title, .aside-FAM01-T01__header__title {
     width: 100%;
     display: block;
 }
-.aside-FAM01-T01__header {
-    display: flex;
-    justify-content: flex-start;
-    width:100%;
-}
-.aside-FAM01-T01__header__title {
-    display: inline;
-}
-.aside-FAM01-T01__header i {
-    display: block;
-    font-size: 24px;
-    padding-top: 20px;
-}
+
+
+
 
 .section-FAM01-T01__group {
-    display: flex;
+    display: flex; /* delete when phone */
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-wrap: wrap; /* delete when phone */
+    align-items: center; /* delete when phone */
     object-fit: fill;
     padding: 5px 0px 0px 0px;
 }
@@ -376,17 +363,20 @@ figure {
 .section-FAM01-T01__group__card {
     display: block;
     min-width: 245px;
-    margin: 0px 4% 4% 0px;
+    margin: 0px 5% 5% 0px; /*0px 30px 30px 0px;*/
 }
 
 .aside-FAM01-T01__group__card { /* specific for Les plus populaires */
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: center;
+    justify-content: flex-start; /* delete when phone */
+    flex-wrap: wrap; /* delete when phone */
+    align-items: center; /* delete when phone */
     min-width: 250px;
     margin-bottom: 30px;
 }
+/*.aside-FAM01-T01__group__card {
+    display: inline-block;
+}*/
 
 
 
@@ -404,7 +394,7 @@ figure {
     border-radius: 21px 21px 0px 0px;
     width: 100%;
     max-width: 350px;
-    height: 120px;
+    height: 120px; /* important sinon elle se fixe proportionnellement quand hauteur 100 %*/
     object-fit: cover;
 }
 
@@ -431,7 +421,7 @@ figure {
 .aside-FAM01-T01__group__card__col1 {
     display: inline-block;
     width: 40%;
-    height: 135px;
+    height: 135px; /* on enleve quand tablet*/
 }
 
 .aside-FAM01-T01__group__card__col2 {
@@ -440,7 +430,7 @@ figure {
     width: 55%;
     height: 135px;
     border-radius: 0px 0px 21px 21px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .aside-FAM01-T01__group__card__col2__line1 {
@@ -470,18 +460,18 @@ figure {
 
 .aside-FAM01-T01__group__card__col2__line1__offer {
     display: inline-block;
-    font-size: 15px;
-    padding: 7px 0px 0px 0px;
+    font-size: 13px;
+    padding: 5px 0px 0px 0px;
 }
 
 .aside-FAM01-T01__group__card__col2__line1__price {
     display: inline-block;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .aside-FAM01-T01__group__card__col2__line1__currency {
     display: inline-block;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .aside-FAM01-T01__group__card__col2__line2__star {
@@ -525,7 +515,7 @@ figure {
     .section-FAM01-T01__group__card__text p, .section-FAM01-T02__group__card__text p, .aside-FAM01-T01__group__card__text p {
         padding: 0px 0px 0px 5px;
         margin: 0px;
-        font-size: 15px;
+        font-size: 13px;
         line-height: 20px;
     }
 
@@ -540,12 +530,11 @@ figure {
         }
 
 
-/* ACTIVITE */
 
-.section-FAM01-T02 { 
+.section-FAM01-T02 { /* ACTIVITE */
     margin-bottom: 50px;
-    border: 0px solid red;
-    width: 100%;
+    border: 0px solid red; /* for test */
+    width: 100%; /* for test */
 }
 
 .section-FAM01-T02__group {
@@ -553,8 +542,11 @@ figure {
     justify-content: space-between;
 }
 
-.section-FAM01-T02__group {
-    border: 0px solid red;
+.section-FAM01-T02__group { /* specific for Activités */
+    /*min-width: 250px;
+    max-width: 350px; 
+    margin: 0px 25px 25px 0px;
+    padding: 5px 0px 0px 0px;*/
 }
 
 /*  COMON Col 1 2 3 4 */
@@ -572,11 +564,8 @@ figure {
 }
 
 .section-FAM01-T02__group__col1__card, .section-FAM01-T02__group__col3__card {
-    display: inline-flex;
+    display: inline-block;
     border: 0px solid blue;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
 }
 
 .section-FAM01-T02__group__col1__card__link, .section-FAM01-T02__group__col3__card__link {
@@ -589,12 +578,12 @@ figure {
     border-radius: 21px 21px 21px 21px;
     box-shadow: rgb(200 200 200) 5px 5px 5px;
     border-radius: 25px;
+    padding-bottom: 5px;
 }
 
     .section-FAM01-T02__group__col1__card__fig h4, .section-FAM01-T02__group__col3__card__fig h4 {
         padding-left: 3%;
-        padding-bottom: 10px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
 .section-FAM01-T02__group__col1__card__fig__img, .section-FAM01-T02__group__col3__card__fig__img {
@@ -617,20 +606,19 @@ figure {
 .section-FAM01-T02__group__col2__line1, .section-FAM01-T02__group__col4__line1 {
     display: block;
     height: 50%;
+    vertical-align: top;
 }
 
 .section-FAM01-T02__group__col2__line2, .section-FAM01-T02__group__col4__line2 {
     display: block;
     height: 50%;
+    vertical-align: bottom;
 }
 
-.section-FAM01-T02__group__col2__line2__card, .section-FAM01-T02__group__col4__line2__card {
-    display: flex;
+.section-FAM01-T02__group__col2__line1__card, .section-FAM01-T02__group__col2__line2__card, .section-FAM01-T02__group__col4__line1__card, .section-FAM01-T02__group__col4__line2__card {
+    /*display: block;*/ /* ! permet etirement du bloc et donc image ! */
     border: 0px solid blue;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
-    padding-bottom: 15px;
+    /*height: 100%;*/
 }
 
 .section-FAM01-T02__group__col2__line1__card__link, .section-FAM01-T02__group__col2__line2__card__link, .section-FAM01-T02__group__col4__line1__card__link, .section-FAM01-T02__group__col4__line2__card__link {
@@ -648,8 +636,8 @@ figure {
     .section-FAM01-T02__group__col2__line1__card__fig h4, .section-FAM01-T02__group__col2__line2__card__fig h4, .section-FAM01-T02__group__col4__line1__card__fig h4, .section-FAM01-T02__group__col4__line2__card__fig h4 {
         padding-left: 3%;
         padding-bottom: 10px;
-        font-size: 15px;
-        text-overflow: ellipsis;
+        margin-bottom: 20px;
+        font-size: 14px;
     }
 
 .section-FAM01-T02__group__col2__line1__card__fig__img, .section-FAM01-T02__group__col4__line1__card__fig__img, .section-FAM01-T02__group__col4__line2__card__fig__img {
@@ -670,7 +658,12 @@ figure {
     border-radius: 21px 21px 0px 0px;
     border: 0px solid blue;
 }
-/*  END Col 1 and Col 4*/
+
+
+
+
+
+/*  END Col 1 and Col 3*/
 /* ======================== END main ========================*/
 footer {
     display: flex;
@@ -684,7 +677,6 @@ footer {
 .footer__cut {
     display: block;
     min-width: 32%;
-    padding-bottom: 20px;
 }
 
 .footer__cut__group {
@@ -701,49 +693,30 @@ footer {
 
 
 /* MEDIA QUERIES for tablet */
-@media screen and (max-width: 991px) and (min-width: 768px) {
+@media screen and (max-width: 991px) {
     * {
         /*color: blue;*/
     }
 
-
-    /* LES PLUS POPULAIRES */
+    .aside-FAM01-T01__group__card__col1 {
+        height: 150px;
+        width: 50%;
+    }
 
     .aside-FAM01-T01 {
-        width: auto;
+        width: auto; /* delete when phone */
         min-width: 100%;
     }
 
-    .aside-FAM01-T01__group__card {
-        display: block;
-    }
 
-    .aside-FAM01-T01__group__card__col1 {
-        height: 150px;
-        width: 200px;
-    }
-    .aside-FAM01-T01__group__card__col1__img {
-        height: 100%;
-        width: 200px;
+    .aside-FAM01-T01__group__card__col2__line1 {
+        font-size: 24px;
     }
 
     .aside-FAM01-T01__group__card__col2 {
-        width: 55%;
+        width: auto;
     }
 
-    .aside-FAM01-T01__group__card__col2__line1__title {
-        display: block;
-    }
-
-    .aside-FAM01-T01__group__card__col2__line1__offer {
-        padding: 37px 0px 0px 0px;
-    }
-
-    /* HEBERGEMENTS */
-
-        .section-FAM01-T01__group__card__text {
-        text-align: center;
-    }
     .section-FAM01-T01 {
         width: 100%;
     }
@@ -752,152 +725,35 @@ footer {
         width: 100%;
     }
 
-    .section-FAM01-T01__group__card__img {
+    .section-FAM01-T01__group__card__img { /* specific for Hebergement */
         max-width: 100%;
     }
-
-    /* ACTIVITES */
-
-
 }
 
-
 /* MEDIA QUERIES for mobile phone */
-
 @media screen and (max-width: 767px) {
-    
     * {
         /*color: green;*/
     }
 
     .main {
         margin-top: 30px;
-        padding: 0px;
+        padding: 0% 1% 0% 1%;
     }
-    .brand {
-        padding-top: 20px;
-        padding-left: 0px;
+
+    .section-FAM01-T01 {
         width: 100%;
-        height: auto;
-        text-align: center;
-    }
-
-    .nav {
-        display: block;
-        width: 100%;
-    }
-    .nav__list {
-        display: inline-block;
-        width: 100%;
-    }
-    .nav__list__item {
-        display: inline-block;
-        width: 49.5%;
-    }
-    .nav__list__item__text {
-        display: inline-block;
-        width: 100%;
-        padding: 25px 0px 15px 0px;
-        border-bottom: 4px solid white;
-    }
-        .nav__list__item__text:hover {
-            width: 100%;
-            border-top: none;
-            border-bottom: 4px solid #0065fc;
-        }
-    .bloc-search {
-        padding: 0% 4% 0% 4%;
-    }
-    .bloc-search__filter {
-        margin-top: 16px;
-    }
-    
-
-    .bloc-search__form__group__item__submit--desk {
-        display: none;
-    }
-
-    .bloc-search__form__group__item__submit--phon {
-        display: inline;
-    }
-
-    .bloc-search__filter {
-        display: inline-block;
-    }
-
-
-    /* LES PLUS POPULAIRES */
-
-    .aside-FAM01-T01 {
-        background-color: #f2f2f2;
-        border-radius: 0px;
-        width: auto;
-        min-width: 100%;
-        margin-bottom: 0px;
-        padding: 1% 4% 2.5% 4%;
     }
 
     .section-FAM01-T01__group__card {
         width: 100%;
     }
 
-    .aside-FAM01-T01__group__card {
-        margin-bottom: 15px;
-    }
-
-
-    /* HEBERGEMENTS */
-
-    .section-FAM01-T01 {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .section-FAM01-T01__group__card__img {
+    .section-FAM01-T01__group__card__img { /* specific for Hebergement */
         max-width: 100%;
     }
-    .section-FAM01-T01 {
+
+    .section-FAM01-T01, .aside-FAM01-T01 { /* HEBERGEMENT    LES PLUS POPULAIRES */
         background-color: white;
     }
-
-    .aside-FAM01-T01__group__card__col1 {
-        height: 135px;
-        width: 40%;
-    }
-    .display-more {
-        padding-top: 20px;
-    }
-
-
-    /* ACTIVITES */
-
-    .section-FAM01-T02 {
-        padding: 5%;
-        margin-bottom: 0px;
-    }
-
-    .section-FAM01-T02__group {
-        display: inline;
-    }
-
-    .section-FAM01-T02__group__col1__card__fig__img, .section-FAM01-T02__group__col3__card__fig__img, .section-FAM01-T02__group__col2__line1__card__fig__img, .section-FAM01-T02__group__col2__line2__card__fig__img, .section-FAM01-T02__group__col4__line1__card__fig__img, .section-FAM01-T02__group__col4__line2__card__fig__img {
-        height: 135px;
-    }
-
-    .section-FAM01-T02__group__col1__card, .section-FAM01-T02__group__col3__card {
-        width: 100%;
-    }
-
-    .section-FAM01-T02__group__col1, .section-FAM01-T02__group__col2, .section-FAM01-T02__group__col3, .section-FAM01-T02__group__col4 {
-        display: inline-block;
-        width: 100%;
-    }
-
-
-    .footer__cut {
-        display: block;
-        width: 100%;
-        padding-bottom: 20px;
-    }
-
 }
