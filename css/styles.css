@@ -253,6 +253,7 @@ figure {
 .bloc-search-info {
     display: flex;
 }
+
     .bloc-search-info div {
         display: inline-block;
     }
@@ -262,9 +263,8 @@ figure {
             font-size: medium;
         }
 
-    .bloc-search-info div span {
-
-    }
+        .bloc-search-info div span {
+        }
 
 .bloc-search-info__icon {
     display: inline-block;
@@ -529,7 +529,7 @@ figure {
 
 /* ACTIVITES */
 
-.section-FAM01-T02 { 
+.section-FAM01-T02 {
     margin-bottom: 50px;
     width: 100%;
 }
@@ -690,6 +690,7 @@ footer {
         height: 150px;
         width: 300px;
     }
+
     .aside-FAM01-T01__group__card__col1__img {
         height: 100%;
         width: 240px;
@@ -737,7 +738,6 @@ footer {
     .section-FAM01-T02__group__col1__card__fig h4, .section-FAM01-T02__group__col3__card__fig h4, .section-FAM01-T02__group__col2__line1__card__fig h4, .section-FAM01-T02__group__col2__line2__card__fig h4, .section-FAM01-T02__group__col4__line1__card__fig h4, .section-FAM01-T02__group__col4__line2__card__fig h4 {
         padding-left: 3%;
     }
-
 }
 
 
@@ -746,7 +746,7 @@ footer {
 /* MEDIA QUERIES for mobile phone */
 
 @media screen and (max-width: 767px) {
-    
+
     .main {
         margin-top: 30px;
         padding: 0px;
@@ -791,11 +791,12 @@ footer {
     .bloc-search {
         padding: 0% 4% 0% 4%;
     }
+
     .bloc-search__filter {
         margin-top: 16px;
         width: 100%;
     }
-    
+
 
     .bloc-search__form__group__item__submit--desk {
         display: none;
@@ -852,6 +853,7 @@ footer {
         height: 135px;
         width: 40%;
     }
+
     .display-more {
         padding-top: 20px;
     }
@@ -892,5 +894,4 @@ footer {
         width: 100%;
         padding-bottom: 20px;
     }
-
 }
